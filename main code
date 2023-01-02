@@ -1,0 +1,14 @@
+import random
+number = random.randint(0,20)
+number_of_gusses= 0
+while (number_of_gusses<5) :
+    guess = int(input(" enter your guess(1 to 20) = "))
+    if guess == number :
+        print("congrats , you are right")
+        break
+    elif guess > number :
+        print ("your guess is grater than the number")
+    elif guess < number :
+        print("your guess is lesser")
+    print(f"guesses remaining {4- number_of_gusses}")
+    number_of_gusses += 1
